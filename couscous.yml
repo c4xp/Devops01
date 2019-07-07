@@ -1,0 +1,32 @@
+# Base URL of the published website for css
+baseUrl: /docs/
+
+# Set the target branch in which to deploy the generated website
+branch: docs
+
+# List of directories to exclude from the processing (default contains "vendor" and "website")
+# Paths are relative to the optional include paths given when generating the website, repository root by default
+exclude:
+    - ansible
+    - assets
+    - db
+    - kube
+    - vendor
+    - demox
+    - '%gitignore%'
+
+# The left menu bar
+menu:
+    items:
+        home:
+            text: Introducere
+            relativeUrl: index.html
+        begin:
+            text: Început
+            relativeUrl: begin.html
+        learn:
+            text: Învățare
+            relativeUrl: learn.html
+        recap:
+            text: Recapitulare
+            relativeUrl: recap.html
