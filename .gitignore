@@ -1,2 +1,9 @@
+/nbproject
 /nbproject/private/
+/nbproject/project.properties
+/nbproject/project.xml
+*.pem
+*.retry
 /.couscous/
+vendor/
+/composer.lock
