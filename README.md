@@ -12,8 +12,10 @@ subTitle: Introducere
 
 ## Ce subiecte vom acoperi în acest atelier:
 
-Docker este o unealtă facută pentru a ușura munca de creare, instalare și rulare ale aplicațiilor folosind containere.
-În acest atelier vom dockeriza o aplicație simplă Php, pentru ca s-o putem pregati pentru Integrare Continuă / Livrare Continuă.
+- Docker este o unealtă facută pentru a ușura munca de creare, instalare și rulare ale aplicațiilor folosind containere.
+- În acest atelier vom dockeriza o aplicație simplă Php, pentru ca s-o putem pregati pentru Integrare Continuă / Livrare Continuă.
+- Cum să ne auto-documentam codul
+- Tipuri, trucuri și unelte utile
 
 ## Ce trebuie să știe participanții:
 
