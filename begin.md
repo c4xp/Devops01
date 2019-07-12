@@ -29,3 +29,26 @@ Unde stau dependintele.
 Acum avem Containere!
 Toata lumea e fericita.
 
+## Crearea imaginii docker
+
+In primul rand trebuie sa avem o serie de fisiere in aplicatie pentru a putea lansa o imagine docker.
+Pentru cursul de azi ele au fost create deja in directorul `assets\demox01`, dar vom explica fiecare fisier ce face.
+
+```
+docker-compose up -d
+docker ps
+docker exec -ti php.demox bash
+```
+
+## Cateva comenzi utile
+
+```
+docker images
+docker rmi c0ff33
+
+docker ps -a
+docker rm c0ff33
+
+docker volume ls
+docker volume rm c0ff33
+```

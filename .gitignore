@@ -13,3 +13,9 @@ vendor/
 /cfg.php
 /error.log
 /composer.lock
+/siteavailable.conf
+/.php.dockerfile
+/composer.json
+/supervisord.conf
+/nginx.conf
+/docker-compose.yml

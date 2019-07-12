@@ -1,0 +1,9 @@
+{
+    "_readme": [
+        "composer install --no-dev"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2"
+    }
+}
