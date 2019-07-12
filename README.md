@@ -30,8 +30,10 @@ Bonus: Alte unelte bune de știut.
 - Un cont pe [Github](https://github.com/)
 - Opțiunea de Virtualizare activă în BIOS. Deschideți o fereastră `PowerShell` cu drepturi de Administrator:
 ```
-Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 Enable-WindowsOptionalFeature –Online -FeatureName Microsoft-Hyper-V –All -NoRestart
+```
+```
+Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 ```
 - Docker-Desktop instalat [download.docker.com](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 - Un procesor capabil de SLAT. ( Utilitare: [Speccy](https://www.ccleaner.com/speccy) [Coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) )
@@ -70,15 +72,16 @@ This message shows that your installation appears to be working correctly.
 
 - Cateva pachete utile: (Instalate fara prompt `choco feature enable -n allowGlobalConfirmation`)
 ```
-choco install peazip git heidisql gimp vcredist-all
+choco install peazip git heidisql vscode k-litecodecpackfull gimp vcredist-all php curl
 ```
 
-## Bonus nr.2 - Composer
+## Bonus nr.2 - Composer și Couscous pentru generare documentație
 
 ```
 choco install composer
 composer global require couscous/couscous
 couscous preview
+couscous generate
 ```
 
 ## Bonus nr.3 - Composer sub Windows Subsystem for Linux

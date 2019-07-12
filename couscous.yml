@@ -30,3 +30,6 @@ menu:
         recap:
             text: Recapitulare
             relativeUrl: recap.html
+        gitutil:
+            text: "Comenzi Git"
+            relativeUrl: gitutil.html

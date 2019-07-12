@@ -1,3 +1,5 @@
+.DS_Store
+.vscode
 /nbproject
 /nbproject/private/
 /nbproject/project.properties
@@ -6,4 +8,8 @@
 *.retry
 /.couscous/
 vendor/
+
+.idea/*
+/cfg.php
+/error.log
 /composer.lock
