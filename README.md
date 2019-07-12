@@ -27,10 +27,10 @@ Bonus: Alte unelte bune de știut.
 ## De ce avem nevoie:
 
 - Laptop cu Windows 64-bit: Pro, Enterprise sau Education
-[AppsFeatures](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/00.apps-features.png)
-[TurnOn](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/01.turnonfeatures.png)
-[HyperV](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/02.hyperv.png)
-[Cmd](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/03.cmd.png)
+![AppsFeatures](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/00.apps-features.png)
+![TurnOn](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/01.turnonfeatures.png)
+![HyperV](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/02.hyperv.png)
+![Cmd](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/03.cmd.png)
 - Un cont pe [Github](https://github.com/)
 - Opțiunea de Virtualizare activă în BIOS. Deschideți o fereastră `PowerShell` cu drepturi de Administrator:
 ```
@@ -39,6 +39,9 @@ Enable-WindowsOptionalFeature –Online -FeatureName Microsoft-Hyper-V –All -N
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 ```
+
+![Dockerinstall](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/04.dockerinstall.png)
+
 - Docker-Desktop instalat [download.docker.com](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 - Un procesor capabil de SLAT. ( Utilitare: [Speccy](https://www.ccleaner.com/speccy) [Coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) )
 - Măcar 4GB de memorie RAM.
@@ -50,6 +53,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 Microsoft Windows [Version 10.0.???.???]
 (c) 2019 Microsoft Corporation. All rights reserved.
 ```
+
 - Tastați: `docker --version`
 ```
 Docker version 18.09.2, build 6247962
