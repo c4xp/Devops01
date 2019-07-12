@@ -52,3 +52,5 @@ docker rm c0ff33
 docker volume ls
 docker volume rm c0ff33
 ```
+
+![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
