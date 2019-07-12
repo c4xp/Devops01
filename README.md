@@ -27,6 +27,10 @@ Bonus: Alte unelte bune de știut.
 ## De ce avem nevoie:
 
 - Laptop cu Windows 64-bit: Pro, Enterprise sau Education
+[AppsFeatures](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/00.apps-features.png)
+[TurnOn](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/01.turnonfeatures.png)
+[HyperV](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/02.hyperv.png)
+[Cmd](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/03.cmd.png)
 - Un cont pe [Github](https://github.com/)
 - Opțiunea de Virtualizare activă în BIOS. Deschideți o fereastră `PowerShell` cu drepturi de Administrator:
 ```
