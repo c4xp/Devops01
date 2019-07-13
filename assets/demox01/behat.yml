@@ -1,0 +1,20 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: https://127.0.0.1
+      goutte:
+        guzzle_parameters:
+          verify: false
+      selenium2:
+        wd_host: "http://127.0.0.1:14400"
+    Imbo\BehatApiExtension:
+      apiClient:
+        base_uri: https://127.0.0.1/api
+        timeout: 5.0
+        verify: false
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Imbo\BehatApiExtension\Context\ApiContext
+        - Behat\MinkExtension\Context\MinkContext
