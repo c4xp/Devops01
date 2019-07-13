@@ -1,0 +1,14 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://127.0.0.1
+      goutte:
+        guzzle_parameters:
+          verify: false
+      selenium2:
+        wd_host: "http://127.0.0.1:14400"
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
