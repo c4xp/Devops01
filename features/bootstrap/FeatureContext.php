@@ -19,4 +19,29 @@ class FeatureContext implements Context
     public function __construct()
     {
     }
+
+    
+    /**
+     * @Given I browse the site
+     */
+    public function iBrowseTheSite()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Given I am tired
+     */
+    public function iAmTired()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @When that I am logged In
+     */
+    public function thatIAmLoggedIn()
+    {
+        throw new PendingException();
+    }
 }

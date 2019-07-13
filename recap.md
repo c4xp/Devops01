@@ -38,3 +38,5 @@ subTitle: Recapitulare
 - Unelte noi pentru o lume in continua schimbare
 
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
+
+![feedback](https://docs.google.com/forms/d/1u1UOSLrvuqSskDHZ7rYh62M85hLTu865xD6nJptb4NU/viewform?edit_requested=true)
