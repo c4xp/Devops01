@@ -39,4 +39,4 @@ subTitle: Recapitulare
 
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
 
-![feedback](https://docs.google.com/forms/d/1u1UOSLrvuqSskDHZ7rYh62M85hLTu865xD6nJptb4NU/viewform?edit_requested=true)
+[feedback](https://docs.google.com/forms/d/1u1UOSLrvuqSskDHZ7rYh62M85hLTu865xD6nJptb4NU/viewform?edit_requested=true)
