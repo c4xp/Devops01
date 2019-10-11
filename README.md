@@ -82,8 +82,10 @@ This message shows that your installation appears to be working correctly.
 
 - Cateva pachete utile: (Instalate fara prompt `choco feature enable -n allowGlobalConfirmation`)
 ```
-choco install peazip git heidisql vscode k-litecodecpackfull gimp vcredist-all php curl
+choco install git heidisql vscode vcredist-all php curl
 ```
+
+Poate fi util si pentru lucrul de zi cu zi: jdk8 gimp k-litecodecpackfull peazip ?!
 
 ## Bonus nr.2 - Composer și Couscous pentru generare documentație
 

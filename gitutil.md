@@ -8,31 +8,50 @@ subTitle: Comenzi Git
 
 ```
 master
-A--B--C-----H--I--J--M--N
-       \   /    \
-test    \ /      \
-D--E--F--G--------K--L
+ ---------------------X-----Y-Z
+                       \   /
+development             \ /
+ A--B--C-----H--I--J--M--N
+        \   /    \
+feat001  \ /      \
+ D--E--F--G--------K--L
 ```
 
-## Merge master into test
-
-To keep test in sync with master so that if there are any conflicts, they can be resolved in the test branch itself, and master remains clean]:
+### Create a new branch for your feature
 
 ```
-git checkout master
+git checkout -b feat001
+```
+
+### Commit your work
+
+```
+git add .
+git commit -m "adding a change from the feat001 branch"
+git push --set-upstream origin feat001
+```
+
+### To keep test in sync with Development (*merge Development into feat001*) [so that if there are any conflicts, they can be resolved in the feat001 branch itself, and Development remains clean]:
+
+```
+git checkout Development
 git pull
-git checkout test
-git merge master
+git checkout feat001
+git merge Development
 ```
 
-## Merge test into master
-
-Then when you are ready (and resolved any conflicts):
+### Then when you are ready (and resolved any conflicts) to *merge feat001 into Development*:
 
 ```
-git checkout master
-git merge test
-git push origin master
+git checkout Development
+git merge feat001
+git push origin Development
+```
+
+### Switch back to your new feature, and repeat the flow
+
+```
+git checkout feat001
 ```
 
 ## Git global setup
@@ -116,3 +135,6 @@ Then, Push the branch to the remote repository origin
 git push -u origin your_branch
 ```
 
+![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
+
+[Recap→](recap.md)

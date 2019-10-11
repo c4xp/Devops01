@@ -22,6 +22,8 @@ couscous preview
 
 ### Unit Testing vs Integration testing
 
+`How does someone measure code performance and code efficiency at the same time ?!`
+
 Testele unitare sunt mai mult destinate programatorului si nu se refera in mod direct pentru oricine altcineva.
 Insa daca testerii iși fac treaba inclusiv utilizatorii finali ar trebui să beneficieze de mai puține erori.
 

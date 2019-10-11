@@ -9,7 +9,7 @@ default:
         wd_host: "http://127.0.0.1:14400"
     Imbo\BehatApiExtension:
       apiClient:
-        base_uri: https://127.0.0.1/api
+        base_uri: https://127.0.0.1/api.php
         timeout: 5.0
         verify: false
   suites:

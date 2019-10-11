@@ -82,6 +82,19 @@ docker rm c0ff33
 
 docker volume ls
 docker volume rm c0ff33
+
+docker info
+docker network inspect bridge
+```
+
+## Exercitii
+
+Cum aflam IP-ul unei masini docker locale ?
+Cum eliberăm toate resursele folosite de docker ? (Images, Containers, Volumes, Networks)
+
+```
+docker inspect c0ff33
+docker system df
 ```
 
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)

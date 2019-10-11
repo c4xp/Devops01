@@ -39,4 +39,4 @@ subTitle: Recapitulare
 
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
 
-[feedback](https://docs.google.com/forms/d/1u1UOSLrvuqSskDHZ7rYh62M85hLTu865xD6nJptb4NU/viewform?edit_requested=true)
+[bit.ly/peak-it-2019-feedback](https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=https%3A%2F%2Fbit.ly%2Fpeak-it-2019-feedback&choe=UTF-8)
