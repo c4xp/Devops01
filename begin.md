@@ -6,6 +6,15 @@ subTitle: Început
 ---
 ## Început
 
+
+- Deschideți o fereastră terminal: `❖ + R`, tastați: `cmd`
+```
+d:
+mkdir workspace
+cd workspace
+git clone https://github.com/c4xp/Devops01.git Devops01
+```
+
 ![Battle](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/battle.png)
 
 Developer are rolul de a scrie cod de calitate, sa rezolve buguri si de a face mentenanta la un cod existent.
@@ -33,6 +42,28 @@ Toata lumea e fericita.
 
 In primul rand trebuie sa avem o serie de fisiere in aplicatie pentru a putea lansa o imagine docker.
 Pentru cursul de azi ele au fost create deja in directorul `assets\demox01`, dar vom explica fiecare fisier ce face.
+
+```
+.
+├─ Devops01
+│  ├── demox
+│  │   ├── lib
+│  │   │   ├── db.class.php
+│  │   │   └── singleton.class.php
+│  │   └── public
+│  │   │   ├── favicon.ico
+│  │   │   ├── index.php
+│  │   │   └── robots.txt
+│  │   └── ?cfg.php
+│  ├── .gitignore
+│  ├── .php.dockerfile
+│  ├── cfg.php
+│  ├── composer.json
+│  ├── docker-compose.yml
+│  ├── nginx.conf
+│  ├── siteavailable.conf
+│  └── supervisord.conf
+```
 
 ```
 docker-compose up -d

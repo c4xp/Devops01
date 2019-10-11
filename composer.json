@@ -4,14 +4,15 @@
     ],
     "license": "MIT",
     "require": {
+        "vlucas/phpdotenv": "^3.3",
         "php": ">=7.2",
         "behat/behat": "^3.5",
+        "behat/mink": "^1.7",
         "behat/mink-extension": "^2.3",
         "behat/mink-goutte-driver": "^1.2",
         "behat/mink-selenium2-driver": "^1.3",
         "imbo/behat-api-extension": "^2.1",
-        "zircote/swagger-php": "^3.0",
-        "behat/mink": "^1.7"
+        "zircote/swagger-php": "^3.0"
     }
 
 }
