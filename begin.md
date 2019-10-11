@@ -36,6 +36,7 @@ Unde stau dependintele.
 ![DevOps](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/vmcnt02.png)
 
 Acum avem Containere!
+Plus ca am mai rezolvat ceva: Acum mediul de dezvoltare, serverul de test intotdeauna este la fel ca mediul de productie.
 Toata lumea e fericita.
 
 ## Crearea imaginii docker
@@ -45,24 +46,23 @@ Pentru cursul de azi ele au fost create deja in directorul `assets\demox01`, dar
 
 ```
 .
-├─ Devops01
-│  ├── demox
-│  │   ├── lib
-│  │   │   ├── db.class.php
-│  │   │   └── singleton.class.php
-│  │   └── public
-│  │   │   ├── favicon.ico
-│  │   │   ├── index.php
-│  │   │   └── robots.txt
-│  │   └── ?cfg.php
-│  ├── .gitignore
-│  ├── .php.dockerfile
-│  ├── cfg.php
-│  ├── composer.json
-│  ├── docker-compose.yml
-│  ├── nginx.conf
-│  ├── siteavailable.conf
-│  └── supervisord.conf
+├── demox
+│   ├── lib
+│   │   ├── db.class.php
+│   │   └── singleton.class.php
+│   └── public
+│   │   ├── favicon.ico
+│   │   ├── index.php
+│   │   └── robots.txt
+│   └── ?cfg.php
+├── .gitignore
+├── .php.dockerfile
+├── cfg.php
+├── composer.json
+├── docker-compose.yml
+├── nginx.conf
+├── siteavailable.conf
+└── supervisord.conf
 ```
 
 ```
@@ -85,3 +85,5 @@ docker volume rm c0ff33
 ```
 
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
+
+[Learn→](learn.md)
