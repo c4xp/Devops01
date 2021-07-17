@@ -35,11 +35,10 @@ Bonus: Alte unelte bune de știut.
 Enable-WindowsOptionalFeature –Online -FeatureName Microsoft-Hyper-V –All -NoRestart
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
-- Microsoft store Get Ubuntu Plain (not 18 or 20 distribution)
-```
 Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 ```
+- go to Microsoft Store Get Ubuntu Plain (not 18 or 20 distribution)
+
 - After install the Ubuntu and restart pc, on CMD:
 ```
 wsl -l -v
@@ -105,13 +104,6 @@ choco install composer
 composer global require couscous/couscous
 couscous preview
 couscous generate
-```
-
-## Bonus nr.3 - Composer sub Windows Subsystem for Linux
-
-- Deschideți o fereastră `PowerShell` cu drepturi de Administrator:
-```
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
