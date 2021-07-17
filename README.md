@@ -44,7 +44,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 ```
 wsl -l -v
 ```
-- Update WSL2 Kernel:
+- Visit the following link in a browser to Update WSL2 Kernel:
 ```
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 ```
@@ -83,11 +83,6 @@ This message shows that your installation appears to be working correctly.
 - Pentru mai multe detalii vizitati [Ghidul Docker](https://docs.docker.com/docker-for-windows/)
 
 ## Bonus nr.1 - [Chocolatey](https://chocolatey.org/) manager de pachete
-
-- Deschideți o fereastră terminal: `❖ + R`, tastați: `cmd`, urmat de `Ctrl + Shift + Enter`
-```
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-```
 
 - Install with Powershell: `❖ + X`, select `Windows PowerShell (Admin)`
 ```
