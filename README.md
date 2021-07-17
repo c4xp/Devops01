@@ -58,16 +58,12 @@ wsl --set-version Ubuntu 2
 
 ## Testarea mediului Windows
 
-- Deschideți o fereastră terminal: `❖ + R`, tastați: `cmd`, urmat de `Ctrl + Shift + Enter`
+- Deschideți o fereastră Powershell: `❖ + X`, select `Windows PowerShell (Admin)`
 ```
-Microsoft Windows [Version 10.0.???.???]
-(c) 2019 Microsoft Corporation. All rights reserved.
-```
-
-- Tastați: `docker --version`
+docker --version
 ```
 Docker version 18.09.2, build 6247962
-```
+
 - Descărcați imaginea simplă hello-world din Docker-Hub si rulați-o: `docker run hello-world`
 ```
 docker : Unable to find image 'hello-world:latest' locally
