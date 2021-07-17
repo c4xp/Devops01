@@ -53,8 +53,6 @@ https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 wsl --set-version Ubuntu 2
 ```
 
-![Dockerinstall](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/04.dockerinstall.png)
-
 - Docker-Desktop instalat [download.docker.com](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 - Un procesor capabil de SLAT. ( Utilitare: [Speccy](https://www.ccleaner.com/speccy) [Coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) )
 - Măcar 4GB de memorie RAM.
