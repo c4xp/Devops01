@@ -80,12 +80,19 @@ This message shows that your installation appears to be working correctly.
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 
-- Cateva pachete utile: (Instalate fara prompt `choco feature enable -n allowGlobalConfirmation`)
+- Install with Powershell: `❖ + X`, select `Windows PowerShell (Admin)`
 ```
-choco install git heidisql vscode vcredist-all php curl
+Get-ExecutionPolicy
+Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-Poate fi util si pentru lucrul de zi cu zi: jdk8 gimp k-litecodecpackfull peazip ?!
+- Cateva pachete utile: (Instalate fara prompt `choco feature enable -n allowGlobalConfirmation`)
+```
+choco install git heidisql vscode vcredist-all php curl nodejs flutter
+```
+
+Alte cateva pachete care merita sa fie mentionate: jdk8 gimp k-litecodecpackfull peazip speccy ?!
 
 ## Bonus nr.2 - Composer și Couscous pentru generare documentație
 
