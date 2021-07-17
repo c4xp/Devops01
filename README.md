@@ -53,7 +53,7 @@ wsl --set-version Ubuntu 2
 ```
 
 - Docker-Desktop instalat [download.docker.com](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
-- Un procesor capabil de SLAT. ( Utilitare: [Speccy](https://www.ccleaner.com/speccy) [Coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) )
+- Un procesor capabil de SLAT (Second Level Address Translation - hardware-assisted virtualization technology). ( Utilitare: [Speccy](https://www.ccleaner.com/speccy) [Coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) )
 - Măcar 4GB de memorie RAM.
 
 ## Testarea mediului Windows
