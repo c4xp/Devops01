@@ -37,9 +37,24 @@ Bonus: Alte unelte bune de știut.
 - Opțiunea de Virtualizare activă în BIOS. Deschideți o fereastră `PowerShell` cu drepturi de Administrator:
 ```
 Enable-WindowsOptionalFeature –Online -FeatureName Microsoft-Hyper-V –All -NoRestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
+- Microsoft store Get Ubuntu Plain (not 18 or 20 distribution)
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName containers –All
+```
+- After install the Ubuntu and restart pc, on CMD:
+```
+wsl -l -v
+```
+- Update WSL2 Kernel:
+```
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+```
+- Restart
+```
+wsl --set-version Ubuntu 2
 ```
 
 ![Dockerinstall](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/04.dockerinstall.png)
