@@ -135,6 +135,33 @@ Then, Push the branch to the remote repository origin
 git push -u origin your_branch
 ```
 
+## Generate a SSH Key for use on your GIT repo
+
+Open Git Bash window
+```
+ssh-keygen -t rsa -b 2048 -C "MyUser laptop"
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/MyUser/.ssh/id_rsa): Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/MyUser/.ssh/id_rsa
+Your public key has been saved in /c/Users/MyUser/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:1234abcd1234abcd12341234abcd1234abcd1234 MyUser machine
+The key's randomart image is:
++---[RSA 2048]----+
+|       1234      |
+|      abcd       |
+|   1234          |
+|     abcd        |
+|1234             |
++----[SHA256]-----+
+
+Copy the contents of the public key into your Git account
+```
+cat ~/.ssh/id_rsa.pub
+```
+
 ## Switch from HTTPS to SSH
 
 Open Git Bash
