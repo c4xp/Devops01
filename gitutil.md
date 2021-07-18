@@ -135,6 +135,27 @@ Then, Push the branch to the remote repository origin
 git push -u origin your_branch
 ```
 
+## Switch from HTTPS to SSH
+
+Open Git Bash
+
+Change the current working directory to your local project
+
+List your existing remotes in order to get the name of the remote you want to change
+```
+git remote -v
+```
+
+Change your remote's URL
+```
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+```
+
+Verify that the remote URL has changed
+```
+git remote -v
+```
+
 ![Questions](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/questions.png)
 
 [Recap→](recap.md)
