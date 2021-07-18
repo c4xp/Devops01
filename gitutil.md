@@ -165,6 +165,11 @@ Copy the contents of the public key into your Git account
 cat ~/.ssh/id_rsa.pub
 ```
 
+Verify that your SSH key was added correctly (example with gitlab)
+```
+ssh -T git@gitlab.com
+```
+
 ## Switch from HTTPS to SSH
 
 Open Git Bash
