@@ -141,6 +141,8 @@ Open Git Bash window
 ```
 ssh-keygen -t rsa -b 2048 -C "MyUser laptop"
 ```
+The result should be something like:
+```
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/MyUser/.ssh/id_rsa): Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
@@ -156,6 +158,7 @@ The key's randomart image is:
 |     abcd        |
 |1234             |
 +----[SHA256]-----+
+```
 
 Copy the contents of the public key into your Git account
 ```
