@@ -1,11 +1,11 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN set -ex; \
     apt-get update; \
     apt-get install -y inetutils-ping vim software-properties-common language-pack-en-base wget net-tools apt-utils supervisor cron mc git curl tree supervisor; \
     LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php; \
     apt-get update; \
-    apt-get install -y php7.2 php7.2-fpm php7.2-common php7.2-mbstring php7.2-xmlrpc php7.2-gd php7.2-xml php7.2-sqlite3 php7.2-mysql php7.2-cli php7.2-zip php7.2-curl php7.2-ldap php7.2-soap; \
+    apt-get install -y php7.3 php7.3-fpm php7.3-common php7.3-mbstring php7.3-xmlrpc php7.3-gd php7.3-xml php7.3-sqlite3 php7.3-mysql php7.3-cli php7.3-zip php7.3-curl php7.3-ldap php7.3-soap; \
     apt-get install -y nginx autoconf build-essential libicu-dev libxslt-dev libmcrypt-dev libxml2-dev libcurl4-openssl-dev libmcrypt-dev mysql-client apt-utils ldap-utils libldap2-dev libc-client-dev libkrb5-dev libgmp-dev libgmp3-dev libfreetype6-dev libc6-dev libpng-dev libjpeg-dev libgd-dev openssl libmemcached-dev zlib1g-dev ssl-cert; \
     apt-get clean; \
     make-ssl-cert generate-default-snakeoil --force-overwrite; \
