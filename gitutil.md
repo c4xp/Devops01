@@ -10,7 +10,7 @@ subTitle: Comenzi Git
 master
  ---------------------X-----Y-Z
                        \   /
-development             \ /
+dev                     \ /
  A--B--C-----H--I--J--M--N
         \   /    \
 feat001  \ /      \
@@ -34,18 +34,18 @@ git push --set-upstream origin feat001
 ### To keep test in sync with Development (*merge Development into feat001*) [so that if there are any conflicts, they can be resolved in the feat001 branch itself, and Development remains clean]:
 
 ```
-git checkout Development
+git checkout dev
 git pull
 git checkout feat001
-git merge Development
+git merge dev
 ```
 
 ### Then when you are ready (and resolved any conflicts) to *merge feat001 into Development*:
 
 ```
-git checkout Development
+git checkout dev
 git merge feat001
-git push origin Development
+git push origin dev
 ```
 
 ### Switch back to your new feature, and repeat the flow
