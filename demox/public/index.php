@@ -1,5 +1,5 @@
 <?php
-include '../cfg.php';
+include '../../cfg.php';
 include_once(APP_DIR.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'db.class.php');
 
 DB::connectPDO();

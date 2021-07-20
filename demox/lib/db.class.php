@@ -67,7 +67,7 @@ class DB extends singleton {
      * execute a sql query
      *
      * @param string sql query
-     * @return boolean
+     * @return object|boolean
      */
     public static function query($sql) {
         $result = @DB::instance()->connection->query($sql);
