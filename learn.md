@@ -4,13 +4,17 @@ layout: default
 title: Devops01
 subTitle: Învățare
 ---
-## Învățare
+## Imagini Docker
+
+![DockerImages](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/docker-cicd.png)
+
+## CI/Cd/CD
 
 ![CiCd](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/cicd.png)
 
 ### Exercitiu autodocumentare
 
-[Couscous](http://couscous.io) ce ?!
+[Couscous](https://couscous.io) ce ?!
 ```
 composer global require couscous/couscous
 ```
