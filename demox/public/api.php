@@ -1,3 +1,4 @@
+<!--Whaaaaaaaaraaaaaaauuuupppppp-->
 <?php
 $s = $_POST['search'];
 header('Content-Type: application/json');
