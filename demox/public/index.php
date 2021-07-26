@@ -6,18 +6,34 @@ DB::connectPDO();
 
 ?>
 <html>
+    <head>
+        <script src="/jquery.min.js"></script>
+        <script>
+            function ceva() {
+                var cecontine = document.getElementById("search").value;
+                $.ajax({
+                    method: "POST",
+                    url: "/api.php",
+                    data: { search: cecontine }
+                }).done(function(resp) {
+                    alert(resp.message + ' at ' + resp.date);
+                });
+                return false;
+            }
+        </script>
+    </head>
     <body>
-demox
-<?php echo filter_input(INPUT_POST, 'searchify', FILTER_SANITIZE_STRING) ?>
-<form method="post" action="/">
-<input type="text" name="searchify">
-<input type="submit" name="submit">
-</form>
-<?php
-$rs = DB::query("SHOW DATABASES;");
-while ($r = $rs->fetch(PDO::FETCH_ASSOC)) {
-    var_export($r);
-}
-?>
+        demox
+        <?php echo filter_input(INPUT_POST, 'search', FILTER_SANITIZE_STRING) ?>
+        <form method="post" action="/api.php" onsubmit="return ceva()">
+        <input type="text" name="search" id="search">
+        <input type="submit" name="submit" value="Ok">
+        </form>
+        <?php
+        $rs = DB::query("SHOW DATABASES;");
+        while ($r = $rs->fetch(PDO::FETCH_ASSOC)) {
+            var_export($r);
+        }
+        ?>
     </body>
 </html>

@@ -1,3 +1,4 @@
 <?php
+$s = $_POST['search'];
 header('Content-Type: application/json');
-echo '{"success":true,"message":"ok"}';
+echo '{"success":true,"message":"Hello '.$s.'","date":"'.date('Y-m-d H:i:s').'"}';
