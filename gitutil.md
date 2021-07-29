@@ -6,6 +6,9 @@ subTitle: Comenzi Git
 ---
 # A good practice from now on: *DO NOT Cherry Pick* !
 
+Need a `git --version --build-options` first.
+Also a good ideea is to set `git config user.name` and `git config user.email` for the current project (in the current folder).
+
 ```
 master
  ---------------------X-----Y-Z
