@@ -165,7 +165,8 @@ The key's randomart image is:
 
 Copy the contents of the public key into your Git account
 ```
-cat ~/.ssh/id_rsa.pub
+Linux> cat ~/.ssh/id_rsa.pub
+Windows> type C:\Users\$ENV:USERNAME\.ssh\id_rsa.pub
 ```
 
 Verify that your SSH key was added correctly (example with gitlab)
