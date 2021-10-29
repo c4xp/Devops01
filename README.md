@@ -30,20 +30,23 @@ Bonus: Alte unelte bune de știut.
 
 - Laptop cu Windows 64-bit: Pro, Enterprise sau Education
 - Un cont pe [Github](https://github.com/)
-- Opțiunea de Virtualizare activă în BIOS. Deschideți o fereastră `PowerShell` cu drepturi de Administrator:
+- Opțiunea de Virtualizare activă în BIOS.
+- Docker Desktop instalat
+![DockerError1](https://raw.githubusercontent.com/c4xp/Devops01/master/assets/docker_error1.png)
+
+- Deschideți o fereastră Powershell: `❖ + X`, select `Windows PowerShell (Admin)`
 ```
-Enable-WindowsOptionalFeature –Online -FeatureName Microsoft-Hyper-V –All -NoRestart
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 Enable-WindowsOptionalFeature -Online -FeatureName containers –All
 ```
 - go to Microsoft Store Get Ubuntu Plain (not 18 or 20 distribution)
-
-- After install the Ubuntu and restart pc, on CMD:
+- Restart
+- After install the Ubuntu on CMD:
 ```
 wsl -l -v
 ```
-- Visit the following link in a browser to Update WSL2 Kernel:
+- Visit and Download the following link in a browser to Update WSL2 Kernel:
 ```
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 ```
