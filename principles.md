@@ -25,7 +25,7 @@ Antipatterns and improper understanding of design principles can lead to STUPID 
 
 The essence of SOLID is managing dependencies. This is done via interfaces and abstractions. Modules and classes should not be tightly coupled.
 
-SOLID Principles from Bob Martin[^1].
+SOLID Principles from Bob Martin[^1] who literally wrote the book[^4].
 
 The first five principles are principles of class design. They are:
 
@@ -365,7 +365,7 @@ I hope this article helps you to better understand what code quality is and mayb
 
 Bibliography:
 
-- [^1]: [UncleBob - Principles Of Ood](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
-- [^2]: Structured Analysis and System Specification, Tom DeMarco, Yourdon Press Computing Series, 1979
-- [^3]: The Practical Guide to Structured Systems Design, 2d. ed., Meilir Page-Jones, Yourdon Press Computing Series, 1988
-- [^4]: Agile Software Development: Principles, Patterns, and Practices, Robert C. Martin and Micah Martin, 2002
+[^1]: [UncleBob - Principles Of Ood](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+[^2]: Structured Analysis and System Specification, Tom DeMarco, Yourdon Press Computing Series, 1979
+[^3]: The Practical Guide to Structured Systems Design, 2d. ed., Meilir Page-Jones, Yourdon Press Computing Series, 1988
+[^4]: Agile Software Development: Principles, Patterns, and Practices, Robert C. Martin and Micah Martin, 2002
