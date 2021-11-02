@@ -84,6 +84,6 @@ COPY --chown=nobody:nobody cfg.php /var/www/html/demox
 USER root
 
 #Install supervisor
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 80
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
