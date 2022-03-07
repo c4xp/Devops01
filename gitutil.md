@@ -59,6 +59,12 @@ git checkout feat001
 
 ## Git global setup
 
+Get what it is already setup:
+```
+git config --global --list
+```
+
+Set your credentials:
 ```
 git config --global user.name "UPSTREAM-USER"
 git config --global user.email "UPSTREAM-EMAIL@SOMETHING"
