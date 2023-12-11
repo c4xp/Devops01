@@ -66,14 +66,14 @@ git config --global --list
 
 Set your credentials:
 ```
-git config --global user.name "UPSTREAM-USER"
-git config --global user.email "UPSTREAM-EMAIL@SOMETHING"
+git config --global user.name "{USERNAME}"
+git config --global user.email "{USERNAME}@EMAIL.TLD"
 ```
 
 ## Create a new repository
 
 ```
-git clone https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+git clone https://github.com/{USERNAME}/{PROJECT}.git
 cd xyz
 touch README.md
 git add README.md
@@ -86,7 +86,7 @@ git push -u origin master
 ```
 cd existing_folder
 git init
-git remote add origin https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+git remote add origin https://github.com/{USERNAME}/{PROJECT}.git
 git add .
 git commit
 git push -u origin master
@@ -95,14 +95,21 @@ git push -u origin master
 ## Pull request (https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 
 Clone your fork to your local machine
+For Github:
 ```
-git clone https://github.com/MY-USER/NEW-PROJECT.git
+git clone https://github.com/{USERNAME}/{PROJECT}.git
+cd LimeSurvey
+```
+
+For Microsoft Azure:
+```
+git clone ssh://ssh.dev.azure.com/v3/{ORGANIZATION}/{PROJECT}/{REPO}
 cd LimeSurvey
 ```
 
 Add 'upstream' repo to list of remotes
 ```
-git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+git remote add upstream https://github.com/{USERNAME}/{PROJECT}.git
 ```
 
 Verify the new remote named 'upstream'
@@ -148,17 +155,17 @@ git push -u origin your_branch
 
 Open Git Bash window
 ```
-ssh-keygen -t rsa -b 2048 -C "MyUser laptop"
+ssh-keygen -t rsa -b 2048 -C "{USERNAME} machine"
 ```
 The result should be something like:
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (/c/Users/MyUser/.ssh/id_rsa): Enter passphrase (empty for no passphrase):
+Enter file in which to save the key (/c/Users/{USERNAME}/.ssh/id_rsa): Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in /c/Users/MyUser/.ssh/id_rsa
-Your public key has been saved in /c/Users/MyUser/.ssh/id_rsa.pub
+Your identification has been saved in /c/Users/{USERNAME}/.ssh/id_rsa
+Your public key has been saved in /c/Users/{USERNAME}/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:1234abcd1234abcd12341234abcd1234abcd1234 MyUser machine
+SHA256:1234abcd1234abcd12341234abcd1234abcd1234 {USERNAME} machine
 The key's randomart image is:
 +---[RSA 2048]----+
 |       1234      |
@@ -175,9 +182,15 @@ Linux> cat ~/.ssh/id_rsa.pub
 Windows> type C:\Users\$ENV:USERNAME\.ssh\id_rsa.pub
 ```
 
-Verify that your SSH key was added correctly (example with gitlab)
+Verify that your SSH key was added correctly
+For Gitlab:
 ```
 ssh -T git@gitlab.com
+```
+
+For Microsoft Azure (after adding the public key to your settings):
+```
+ssh -T "{USERNAME}@ssh.dev.azure.com"
 ```
 
 ## Switch from HTTPS to SSH
@@ -193,7 +206,7 @@ git remote -v
 
 Change your remote's URL
 ```
-git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+git remote set-url origin git@github.com:{USERNAME}/{REPOSITORY}.git
 ```
 
 Verify that the remote URL has changed
